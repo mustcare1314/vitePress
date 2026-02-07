@@ -3,10 +3,27 @@ import { defineConfig } from "vitepress";
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   srcDir: "src",
+  lastUpdated: true,
+  lang: "zh-CN",
 
   title: "care",
   description: "emmm",
   themeConfig: {
+    lastUpdated: {
+      text: "最后更新时间",
+    },
+
+    // 中文本地化
+    outlineTitle: "页面导航",
+    darkModeSwitchLabel: "主题",
+    sidebarMenuLabel: "菜单",
+    returnToTopLabel: "回到顶部",
+    langMenuLabel: "多语言",
+    docFooter: {
+      prev: "上一页",
+      next: "下一页",
+    },
+
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: "首页", link: "/" },
@@ -28,6 +45,16 @@ export default defineConfig({
         text: "学习笔记",
         collapsed: true,
         items: [
+          {
+            text: "JavaScript",
+            collapsed: true,
+            items: [
+              {
+                text: "操作数组的内置方法合集",
+                link: "/notes/javaScript/array",
+              },
+            ],
+          },
           {
             text: "网络相关",
             collapsed: true,
