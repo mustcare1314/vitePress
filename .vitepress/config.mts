@@ -50,15 +50,25 @@ export default defineConfig({
             collapsed: true,
             items: [
               {
-                text: "操作数组的内置方法合集",
+                text: "数组方法大全",
                 link: "/notes/javaScript/array",
+              },
+              {
+                text: "this 指向规则",
+                link: "/notes/javaScript/this",
               },
             ],
           },
           {
             text: "网络相关",
             collapsed: true,
-            items: [{ text: "SSE学习笔记", link: "/notes/internet/sse" }],
+            items: [
+              { text: "SSE学习笔记", link: "/notes/internet/sse" },
+              {
+                text: "常见状态码以及含义",
+                link: "/notes/internet/statusCode",
+              },
+            ],
           },
           {
             text: "vue3相关",

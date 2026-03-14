@@ -9,7 +9,7 @@ hero:
   actions:
     - theme: brand
       text: 最新笔记
-      link: /notes/javaScript/array
+      link: /notes/vue3/setup
     - theme: alt
       text: 所有笔记
       link: /notes/internet/sse
