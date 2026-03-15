@@ -594,9 +594,9 @@ const { count, name } = state;
 const { count, name } = toRefs(state);
 ```
 
-## 最佳实践
+## 总结
 
-::: tip 建议
+::: tip 小提示
 
 1. **简单类型使用 ref**：更灵活，还支持所有类型
 2. **复杂类型使用 reactive**：不需要使用`.value`就可以访问
